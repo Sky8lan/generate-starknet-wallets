@@ -16,6 +16,7 @@ export const starkscan = 'https://starkscan.co/tx/';
 export const argentaddressesFilePath = "./data/argent_addresses.txt";
 export const argentprivateKeysFilePath = './data/argent_private_keys.txt';
 export const argentpublicKeysFilePath = './data/argent_public_keys.txt';
+export const argentmnemonicsFilePath = './data/my_argent_seeds.txt';
 export const braavosaddressesFilePath = "./data/braavos_addresses.txt";
 export const braavosprivateKeysFilePath = './data/braavos_private_keys.txt';
 export const braavosmnemonicsFilePath = './data/braavos_seeds.txt';
