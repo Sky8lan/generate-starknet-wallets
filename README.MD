@@ -1,3 +1,5 @@
+Fork if you already have mnemonics and want to generate from it addresses, private keys and public keys. Put your seeds to data/my_argent_seeds.txt
+
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Raleway&weight=500&size=50&duration=3000&pause=1000&color=20F700&center=true&vCenter=true&width=640&height=90&lines=Generate+StarkNet+Wallets)](https://git.io/typing-svg)
 
 # StarkNet wallets generator
