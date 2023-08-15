@@ -13,6 +13,7 @@ import {
     argentpublicKeysFilePath,
     argentXaccountClassHash,
     argentXproxyClassHash,
+    argentmnemonicsFilePath,
     braavosaddressesFilePath,
     braavosprivateKeysFilePath,
     braavosmnemonicsFilePath,
@@ -79,8 +80,13 @@ export const loadArgentWallets = async () => {
             .split("\n")
             .map(row => row.trim())
             .filter(row => row !== "");
+            
+        const mnemonics = fs.readFileSync(argentmnemonicsFilePath, "utf-8")
+            .split("\n")
+            .map(row => row.trim())
+            .filter(row => row !== "");
 
-        return { addresses, privateKeys, publicKeys };
+        return { mnemonics, addresses, privateKeys, publicKeys };
     } catch (err) {
         console.error(`Error while loading wallet data: ${err.message}`);
         throw err;
